@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits, ActionRowBuilder,ButtonBuilder, ButtonStyle } = require('discord.js');
-const{token}=require('./config.json');
+const{token}=require('../config.json');
 const{Tictactoe}= require('./databaseobject.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.DirectMessages] });
 client.login(token);
